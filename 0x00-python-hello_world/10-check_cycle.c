@@ -6,19 +6,19 @@
  *
  * Return: 1 if the list has a cycle, 0 if it doesn't
  */
-
 int check_cycle(listint_t *list)
 {
-	listint_t *held, *current;
+	listint_t *held;
+	listint_t *current;
 	int flag = 0;
 
 	if (list)
 	{
 		held = list;
-		while (held && flag == 0)
+		while (held->next && flag == 0)
 		{
 			current = held->next;
-			while (current)
+			while (current->next)
 			{
 				if (current == held)
 				{
