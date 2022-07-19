@@ -13,7 +13,7 @@ void print_python_float(PyObject *p)
 	char *str = NULL;
 
 	printf("[.] float object info\n");
-	if (!PyFloat_check(f))
+	if (!PyFloat_Check(f))
 	{
 		printf("  [ERROR] Invalid Float Object\n");
 		return;
@@ -45,7 +45,7 @@ void print_python_bytes(PyObject *p)
 	else
 		printf("  first 10 bytes:");
 	for (i = 0; i <= size && i < 10; i++)
-		print(" %02hhx", trying_str[i]);
+		printf(" %02hhx", trying_str[i]);
 	printf("\n");
 }
 
