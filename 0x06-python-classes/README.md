@@ -14,4 +14,4 @@ _____|____________
 [100-singly_linked_list.py](./100-singly_linked_list.py) | Python class implementing a singly linked list structure
 [101-square.py](./101-square.py) | Python class Square that defines a square based on ``./6-square.py``
 [102-square.py](./102-square.py) | Python class Square that defines a square based on ``./4-square.py``
-[103-magic_class.py](./103-magic_class.py) | Python class MagicClass that does the same as a given ByteCode
+[103-magic_class.py](./103-magic_class.py) | Python class MagicClass that does the same as the given ByteCode
