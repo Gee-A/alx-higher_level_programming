@@ -1,0 +1,63 @@
+========================
+``0-add_integer`` module
+========================
+
+This library uses only ``add_integer``
+--------------------------------------
+``add_integer`` returns the result of two numbers in integer format.
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Now use it:
+    >>> add_integer(2)
+    100
+
+    >>> add_integer(0, 5)
+    5
+
+    >>> add_integer(1.4, 6)
+    7
+
+    >>> add_integer(-3, -2)
+    -5
+
+    >>> add_integer(3, -2)
+    1
+
+    >>> add_integer(1.0, 2.0)
+    3
+
+    >>> add_integer()
+    Traceback (most recent call last):
+        ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+    >>> add_integer("Gideon")
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer(4, "Alx")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+    >>> add_integer("Alx", "SE")
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer(float('nan'))
+    Traceback (most recent call last):
+        ...
+    ValueError: cannot convert float NaN to integer
+
+    >>> add_integer(['A', 'B', 'C'], 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer(2, ['A', 'B', 'C'])
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
