@@ -1,4 +1,4 @@
-# (remove this)!/usr/bin/python3
+#!/usr/bin/python3
 
 """
 say_my_name prints the entered names on a line and return

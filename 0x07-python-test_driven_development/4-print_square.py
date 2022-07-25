@@ -1,4 +1,4 @@
-# (remove this)!/usr/bin/python3
+#!/usr/bin/python3
 
 """module contain print_square function that prints a sqaure base on size"""
 
