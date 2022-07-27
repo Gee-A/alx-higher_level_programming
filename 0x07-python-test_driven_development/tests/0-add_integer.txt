@@ -64,4 +64,4 @@ Now use it:
 
     >>> add_integer(100e1000)
     Traceback (most recent call last):
-    TypeError: cannot convert float infinity to integer
+    OverflowError: cannot convert float infinity to integer
