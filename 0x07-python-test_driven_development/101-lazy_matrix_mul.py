@@ -1,4 +1,4 @@
-# (remove this)!/usr/bin/python3
+#!/usr/bin/python3
 """Module lazy_matrix_mul
 Matrix multiplication using NumPy.
 """
