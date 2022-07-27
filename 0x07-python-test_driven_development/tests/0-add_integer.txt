@@ -61,3 +61,7 @@ Now use it:
     Traceback (most recent call last):
         ...
     TypeError: b must be an integer
+
+    >>> add_integer(100e1000)
+    Traceback (most recent call last):
+    TypeError: cannot convert float infinity to integer
