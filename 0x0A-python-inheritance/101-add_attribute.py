@@ -10,7 +10,7 @@ def add_attribute(an_obj, an_attr, a_value):
 
     Args:
         - an_obj: object to add the attribute to
-        - an_attr: name of the attribute
+        - an_attr: name of the attribute to be added
         - a_value: value of the attribute to add
     """
 
