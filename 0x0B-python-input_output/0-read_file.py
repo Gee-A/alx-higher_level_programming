@@ -6,10 +6,11 @@ Contains a function that reads a text file and prints to stdout
 
 
 def read_file(filename=""):
-    """Reads a text file(UTF8) and prints to stdout
+    """Reads from filename (UTF8) and prints to stdout
     Args:
         filename: name of file to be read
     """
 
-    with open(filename, encoding="utf-8") as f:
-        print(f.read())
+    with open(filename) as f:
+        read_file = f.read()
+        print(read_file, end="")
