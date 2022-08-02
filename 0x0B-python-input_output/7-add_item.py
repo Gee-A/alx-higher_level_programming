@@ -5,16 +5,18 @@ Add all arguments to a Python list and save them to a file."""
 
 import sys
 
-save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
+if __name__ == "__main__":
+    save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+    load_from_json_file = \
+        __import__('6-load_from_json_file').load_from_json_file
 
-my_file = "add_item.json"
+    my_file = "add_item.json"
 
-try:
-    my_list = load_from_json_file(my_file)
-except FileNotFoundError:
-    my_list = []
-for arg in sys.argv[1:]:
-    my_list.append(arg)
+    try:
+        my_list = load_from_json_file(my_file)
+    except FileNotFoundError:
+        my_list = []
+    for arg in sys.argv[1:]:
+        my_list.append(arg)
 
-save_to_json_file(my_list, my_file)
+    save_to_json_file(my_list, my_file)
