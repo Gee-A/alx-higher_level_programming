@@ -9,6 +9,9 @@ from models.base import Base
 class Rectangle(Base):
     """class describing a rectangle.
     Public intance method:
+        - area
+        - display
+        - update
     Inherits from base.
     """
 
@@ -17,20 +20,23 @@ class Rectangle(Base):
         Args:
             - __width: rectangle width
             - __height: rectangle height
-            - __x: a coordinate along the base
-            - __y: a coordinate along the abscissa
+            - __x: coordinate along the base
+            - __y: coordinate along the abscissa
             - id: instance id
         """
-        super().__init__(id)
+
         self.width = width
         self.height = height
         self.x = x
         self.y = y
+        super().__init__(id)
 
     def __str__(self):
-        """Returns a formatted string format of instance"""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y,
-                                                       self.width, self.height)
+        """Returns a formatted string of the Rectangle instance"""
+
+        s = "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.__x, self.__y, self.__width, self.__height)
+        return s
 
     @property
     def width(self):
@@ -102,3 +108,35 @@ class Rectangle(Base):
 
         [print() for i in range(self.y)]
         [print(' '*self.x + '#'*self.width) for i in range(self.height)]
+
+    def update(self, *args, **kwargs):
+        """Updates attributes of an instance.
+        Args:
+            - id attribute
+            - width attribute
+            - height attribute
+            - x attribute
+            - y attribute
+        """
+        if args is not None and len(args) != 0:
+            self.id = args[0]
+            if len(args) > 1:
+                self.width = args[1]
+            if len(args) > 2:
+                self.height = args[2]
+            if len(args) > 3:
+                self.x = args[3]
+            if len(args) > 4:
+                self.y = args[4]
+        else:
+            for key, value in kwargs.items():
+                if key == "id":
+                    self.id = value
+                if key == "width":
+                    self.width = value
+                if key == "height":
+                    self.height = value
+                if key == "x":
+                    self.x = value
+                if key == "y":
+                    self.y = value
