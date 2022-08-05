@@ -9,6 +9,10 @@ from models.rectangle import Rectangle
 
 class Square(Rectangle):
     """Class describing a square.
+    Public instance method:
+        - area
+        - display
+        - update
     Inherits from Rectangle
     """
 
@@ -38,6 +42,7 @@ class Square(Rectangle):
     def size(self, value):
         """Set the size attribute."""
         self.width = value
+        self.height = value
 
     def area(self):
         """Determines area of rectangle instance
