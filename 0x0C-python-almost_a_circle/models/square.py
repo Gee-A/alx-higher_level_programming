@@ -10,9 +10,10 @@ from models.rectangle import Rectangle
 class Square(Rectangle):
     """Class describing a square.
     Public instance method:
-        - area
-        - display
-        - update
+        - area()
+        - display()
+        - update()
+        - to_dictionary()
     Inherits from Rectangle
     """
 
