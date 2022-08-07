@@ -189,7 +189,7 @@ class TestRectangle(unittest.TestCase):
         """Test for public method update with wrong types."""
 
         r1 = Rectangle(10, 10, 10, 10)
-        #Not raising id error, it's only assumed to be integer
+        # Not raising id error, it's only assumed to be integer
         """with self.assertRaises(TypeError) as x:
             r1.update("hi")
         self.assertEqual("id must be an integer", str(x.exception))"""
@@ -213,7 +213,7 @@ class TestRectangle(unittest.TestCase):
         """Test for public method update with wrong types in kwargs."""
 
         r1 = Rectangle(10, 10, 10, 10)
-        #Not raising id error, it's only assumed to be integer
+        # Not raising id error, it's only assumed to be integer
         """with self.assertRaises(TypeError) as x:
             r1.update(id='hi')
         self.assertEqual("id must be an integer", str(x.exception))"""
