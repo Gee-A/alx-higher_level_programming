@@ -20,8 +20,8 @@ class Rectangle(Base):
         Args:
             - __width: rectangle width
             - __height: rectangle height
-            - __x: coordinate along the base
-            - __y: coordinate along the abscissa
+            - __x: base cordinate
+            - __y: coordinate along the abscissa coordinate
             - id: instance id
         """
 
