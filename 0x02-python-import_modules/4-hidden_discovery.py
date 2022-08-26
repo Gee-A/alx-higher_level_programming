@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# run code in Python3.8.x (since hidden_4.pyc was compiled with this version)
 
 if __name__ == "__main__":
     """Print all names defined by hidden_4 module."""
