@@ -1,5 +1,8 @@
 # 0x05. Python - Exceptions
 
+### Resources
+* [Python Try Except](https://www.w3schools.com/python/python_try_except.asp)
+* [Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
 ## Table of contents
 Files | Description
 ------|------------
