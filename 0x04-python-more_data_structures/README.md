@@ -1,5 +1,7 @@
 #More Data Structures: Set, Dectionary
 
+### Resources
+* [bytesobject.h](https://github.com/python/cpython/blob/main/Include/bytesobject.h)
 ## Table of contents
 Files | Description
 ----- | -----------
