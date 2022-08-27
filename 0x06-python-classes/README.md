@@ -1,7 +1,10 @@
 # 0x06. Python - Classes and Objects
 
+### Resources
+* [Object Oriented Programming](https://python.swaroopch.com/oop.html)
+* [Properties vs Getters and Setters](https://python-course.eu/oop/properties-vs-getters-and-setters.php)
+* [Python __Dunder__ method](https://holycoders.com/python-dunder-special-methods/)
 ## Table of contents
-
 File | Description
 -----|------------
 [0-square.py](./0-square.py) | Python empty class Square
