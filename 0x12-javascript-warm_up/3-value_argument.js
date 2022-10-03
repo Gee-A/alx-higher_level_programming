@@ -1,9 +1,7 @@
 #!/usr/bin/node
 
-if (process.argv.length < 3) {
+if (process.argv[2] === undefined) {
   console.log('No argument');
 } else {
-  for (let i = 2; i < process.argv.length; i++) {
-    console.log(process.argv[i]);
-  }
+  console.log(process.argv[2]);
 }
