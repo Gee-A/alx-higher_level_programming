@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const { dict } = require('./main.js');
+const { dict } = require('./101-data.js');
 
 const newDict = Object.entries(dict).reduce((acc, [key, value]) => {
   acc[value] = acc[value] ? [...acc[value], key] : [key];
