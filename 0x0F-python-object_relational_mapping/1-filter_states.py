@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 """script lists all staes with a name starting with 'N' from the database.
 """
 
