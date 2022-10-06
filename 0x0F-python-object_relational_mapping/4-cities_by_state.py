@@ -16,3 +16,6 @@ if __name__ == '__main__':
     records = cur.fetchall()
     for record in records:
         print(record)
+
+    cur.close()
+    db.close()
