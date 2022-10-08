@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""A python script that interact with MySQL database
+"""
 
 if __name__ == '__main__':
     import MySQLdb
