@@ -7,7 +7,7 @@ import sys
 import requests
 
 if __name__ == "__main__":
-    q = sys.argv[1] if len(sys.argv) > 1 and else ""
+    q = sys.argv[1] if len(sys.argv) > 1 else ""
     res = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
     try:
         dic = res.json()
@@ -16,4 +16,4 @@ if __name__ == "__main__":
         else:
             print('[{}] {}'.format(dic.get('id'), dic.get('name')))
     except ValueError:
-        print('No result')
+        print('Not a valid JSON')
